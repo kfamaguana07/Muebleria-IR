@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generación de Proforma</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jaro&family=Keania+One&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
     <link rel="stylesheet" href="css/generacionProf.css">
 </head>
 <body>
@@ -12,23 +19,23 @@
     </header>
 
     <aside class="total-info">
-        <h3>Resumen de la Proforma</h3>
+        <h3><i class="fas fa-receipt"></i> Resumen de la Proforma</h3>
         <div class="form-section">
-                <div>
-                    <label for="subtotal">Subtotal</label>
-                    <input type="text" id="subtotal" name="subtotal" value="0" readonly>
-                </div>
-                <div>
-                    <label for="total-impuestos">Impuestos</label>
-                    <input type="text" id="total-impuestos" name="total-impuestos" value="0" readonly>
-                </div>
-                <div>
-                    <label for="total-pagar">Total a Pagar</label>
-                    <input type="text" id="total-pagar" name="total-pagar" value="0" readonly>
-                </div>
-                <div class="form-section">
-                    <button type="button" class="add-promo-btn"><strong>Generar</strong></button>
-                </div>
+            <div>
+                <label for="subtotal">Subtotal</label>
+                <input type="text" id="subtotal" name="subtotal" value="0" readonly>
+            </div>
+            <div>
+                <label for="total-impuestos">Impuestos</label>
+                <input type="text" id="total-impuestos" name="total-impuestos" value="0" readonly>
+            </div>
+            <div>
+                <label for="total-pagar">Total a Pagar</label>
+                <input type="text" id="total-pagar" name="total-pagar" value="0" readonly>
+            </div>
+            <div class="form-section">
+                <button type="button" class="add-promo-btn"><strong><i class="fas fa-file-invoice-dollar"></i> Generar</strong></button>
+            </div>
         </div>
     </aside>
 
@@ -36,9 +43,9 @@
         <form class="form-proforma">
             <h1 class="GenPro">Generación de Proforma</h1>
             
-            <!-- Contenedor: Información del Cliente -->
+            <!-- Información del Cliente -->
             <div class="info-cliente">
-                <h2>Información del Cliente</h2>
+                <h2><i class="fas fa-user"></i> Información del Cliente</h2>
                 <div class="form-section">
                     <div class="input-pair">
                         <div>
@@ -63,9 +70,9 @@
                 </div>
             </div>
 
-            <!-- Contenedor: Detalles del Producto -->
+            <!-- Detalles del Producto -->
             <div class="detalles-producto">
-                <h2>Detalles del Producto</h2>
+                <h2><i class="fas fa-couch"></i> Detalles del Producto</h2>
                 <div class="form-section">
                     <div class="input-pair">
                         <div>
@@ -94,28 +101,28 @@
                     </div>
                     <!-- Botón para agregar más productos -->
                     <div class="form-section">
-                        <button type="button" class="add-product-btn">+</button>
+                        <button type="button" class="add-product-btn"><i class="fas fa-plus"></i></button>
                     </div>
                 </div>
             </div>
 
-            <!-- Contenedor: Promociones y Descuentos -->
+            <!-- Promociones y Descuentos -->
             <div class="promociones-descuentos">
-                <h2>Ofertas</h2>
+                <h2><i class="fas fa-tags"></i> Ofertas</h2>
                 <div class="form-section">
                     <div class="input-pair">
                         <div>
                             <label for="descuento">Descuento</label>
                             <input type="text" id="descuento" name="descuento" placeholder="Descuento aplicado en %">
                         </div>
-                    <div>
-                        <label for="tipo-promocion">Tipo de Promoción</label>
-                        <select id="tipo-promocion" name="tipo-promocion">
-                            <option value="">Seleccione una promoción</option>
-                            <option value="instalacion-gratis">Instalacion Gratis</option>
-                            <option value="envio-gratis">Envío Gratis</option>
-                        </select>
-                    </div>
+                        <div>
+                            <label for="tipo-promocion">Tipo de Promoción</label>
+                            <select id="tipo-promocion" name="tipo-promocion">
+                                <option value="">Seleccione una promoción</option>
+                                <option value="instalacion-gratis">Instalación Gratis</option>
+                                <option value="envio-gratis">Envío Gratis</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
