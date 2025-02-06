@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultar Proforma</title>
     <link rel="stylesheet" href="css/consultarProf.css">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,11 +15,11 @@
     </header>
 
     <div class="container">
-        <h1 class="titulo-consultar">Consultar Proforma</h1>
+        <h1 class="titulo-consultar"><i class="fas fa-search"></i> Consultar Proforma</h1>
 
         <!-- Filtro de búsqueda -->
         <div class="filtro-busqueda">
-            <h2>Buscar Proforma</h2>
+            <h2><i class="fas fa-filter"></i> Buscar Proforma</h2>
             <form id="form-consulta">
                 <div class="input-pair">
                     <div>
@@ -38,13 +41,13 @@
                         <input type="date" id="fecha-fin" name="fecha-fin">
                     </div>
                 </div>
-                <button type="submit" class="buscar-btn">Buscar</button>
+                <button type="submit" class="buscar-btn"><i class="fas fa-search"></i> Buscar</button>
             </form>
         </div>
 
         <!-- Tabla de resultados de consulta -->
         <div class="resultados-consulta">
-            <h2>Resultados de la Consulta</h2>
+            <h2><i class="fas fa-table"></i> Resultados de la Consulta</h2>
             <table id="tabla-resultados">
                 <thead>
                     <tr>
@@ -60,9 +63,9 @@
                         <td>Juan Pérez</td>
                         <td>2025-02-05</td>
                         <td>
-                            <button class="editar-btn">Actualizar</button>
-                            <button class="eliminar-btn">Eliminar</button>
-                            <button class="exportar-btn">Exportar</button>
+                            <button class="editar-btn"><i class="fas fa-edit"></i> Actualizar</button>
+                            <button class="eliminar-btn"><i class="fas fa-trash-alt"></i> Eliminar</button>
+                            <button class="exportar-btn"><i class="fas fa-download"></i> Exportar</button>
                         </td>
                     </tr>
                     <tr>
@@ -70,9 +73,9 @@
                         <td>Ana Gómez</td>
                         <td>2025-02-06</td>
                         <td>
-                            <button class="editar-btn">Actualizar</button>
-                            <button class="eliminar-btn">Eliminar</button>
-                            <button class="exportar-btn">Exportar</button>
+                            <button class="editar-btn"><i class="fas fa-edit"></i> Actualizar</button>
+                            <button class="eliminar-btn"><i class="fas fa-trash-alt"></i> Eliminar</button>
+                            <button class="exportar-btn"><i class="fas fa-download"></i> Exportar</button>
                         </td>
                     </tr>
                 </tbody>

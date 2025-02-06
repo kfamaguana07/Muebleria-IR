@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualizar Proforma</title>
     <link rel="stylesheet" href="css/actualizarProf.css">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Muebleria y Carpinteria "El Laurel"</h1>
+        <h1>Muebleria y Carpinteria "El Laurel" <i class="fas fa-couch"></i></h1>
     </header>
 
     <aside class="total-info">
-        <h3>Resumen de la Proforma</h3>
+        <h3><i class="fas fa-receipt"></i> Resumen de la Proforma</h3>
         <div class="form-section">
                 <div>
                     <label for="subtotal">Subtotal</label>
@@ -27,18 +30,18 @@
                     <input type="text" id="total-pagar" name="total-pagar" value="230" readonly>
                 </div>
                 <div class="form-section">
-                    <button type="button" class="update-promo-btn"><strong>Guardar Cambios</strong></button>
+                    <button type="button" class="update-promo-btn"><i class="fas fa-save"></i> Guardar Cambios</button>
                 </div>
         </div>
     </aside>
 
     <div class="container">
         <form class="form-actualizar">
-            <h1 class="ActPro">Actualizar Proforma</h1>
+            <h1 class="ActPro"><i class="fas fa-edit"></i> Actualizar Proforma</h1>
             
             <!-- Contenedor: Información del Cliente -->
             <div class="info-cliente">
-                <h2>Información del Cliente</h2>
+                <h2><i class="fas fa-user"></i> Información del Cliente</h2>
                 <div class="form-section">
                     <div class="input-pair">
                         <div>
@@ -65,7 +68,7 @@
 
             <!-- Contenedor: Detalles del Producto -->
             <div class="detalles-producto">
-                <h2>Detalles del Producto</h2>
+                <h2><i class="fas fa-box"></i> Detalles del Producto</h2>
                 <div class="form-section">
                     <div class="input-pair">
                         <div>
@@ -97,7 +100,7 @@
 
             <!-- Contenedor: Promociones y Descuentos -->
             <div class="promociones-descuentos">
-                <h2>Ofertas</h2>
+                <h2><i class="fas fa-tag"></i> Ofertas</h2>
                 <div class="form-section">
                     <div class="input-pair">
                         <div>
@@ -117,7 +120,7 @@
             </div>
             <!-- Botón para actualizar productos -->
             <div class="form-section">
-                <button type="button" class="update-product-btn">Actualizar Producto</button>
+                <button type="button" class="update-product-btn"><i class="fas fa-sync-alt"></i> Actualizar Producto</button>
             </div>
         </form>
     </div>
