@@ -1,0 +1,162 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFE9D5;
+    color: #27445D;
+}
+
+/* Estilos del header */
+header {
+    background-color: #497D74;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* Contenedor principal */
+.container {
+    position: relative;
+    right: 10%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem; /* Tamaño de letra más pequeño */
+}
+
+/* Estilo para los títulos de las secciones */
+h2 {
+    color: #497D74;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #497D74;
+    padding-bottom: 5px;
+}
+
+/* Estilo para los formularios */
+.form-proforma {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo de los contenedores de los campos de formulario */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-pair {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.input-pair div {
+    flex: 1;
+}
+
+/* Campos de entrada */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #71BBB2;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="number"] {
+    background-color: #EFE9D5;
+}
+
+select {
+    background-color: #FFFFFF;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #497D74;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #71BBB2;
+}
+
+.add-product-btn, .add-promo-btn {
+    align-self: flex-start;
+}
+
+/* Estilo para el aside del total, ahora a la derecha */
+aside.total-info {
+    width: 300px;
+    background-color: #497D74;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 2%;
+    top: 14.5%;
+}
+
+aside h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+aside input {
+    background-color: #EFE9D5;
+}
+
+
+/* Ajustes para la versión responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-proforma {
+        width: 100%;
+    }
+
+    aside.total-info {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .input-pair {
+        flex-direction: column;
+    }
+
+    .input-pair div {
+        margin-bottom: 10px;
+    }
+
+    .add-product-btn, .add-promo-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
