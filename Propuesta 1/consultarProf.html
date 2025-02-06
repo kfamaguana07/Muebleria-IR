@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Proforma</title>
+    <link rel="stylesheet" href="css/consultarProf.css">
+</head>
+<body>
+    <header>
+        <h1>Muebleria y Carpinteria "El Laurel"</h1>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo-consultar">Consultar Proforma</h1>
+
+        <!-- Filtro de búsqueda -->
+        <div class="filtro-busqueda">
+            <h2>Buscar Proforma</h2>
+            <form id="form-consulta">
+                <div class="input-pair">
+                    <div>
+                        <label for="numero-proforma">Número de Proforma</label>
+                        <input type="text" id="numero-proforma" name="numero-proforma" placeholder="Número de proforma">
+                    </div>
+                    <div>
+                        <label for="cliente">Cliente</label>
+                        <input type="text" id="cliente" name="cliente" placeholder="Nombre del cliente">
+                    </div>
+                </div>
+                <div class="input-pair">
+                    <div>
+                        <label for="fecha-inicio">Fecha Inicio</label>
+                        <input type="date" id="fecha-inicio" name="fecha-inicio">
+                    </div>
+                    <div>
+                        <label for="fecha-fin">Fecha Fin</label>
+                        <input type="date" id="fecha-fin" name="fecha-fin">
+                    </div>
+                </div>
+                <button type="submit" class="buscar-btn">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Tabla de resultados de consulta -->
+        <div class="resultados-consulta">
+            <h2>Resultados de la Consulta</h2>
+            <table id="tabla-resultados">
+                <thead>
+                    <tr>
+                        <th>Número de Proforma</th>
+                        <th>Cliente</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Juan Pérez</td>
+                        <td>2025-02-05</td>
+                        <td>
+                            <button class="editar-btn">Actualizar</button>
+                            <button class="eliminar-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Ana Gómez</td>
+                        <td>2025-02-06</td>
+                        <td>
+                            <button class="editar-btn">Actualizar</button>
+                            <button class="eliminar-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
