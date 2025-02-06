@@ -14,7 +14,6 @@
     <aside class="total-info">
         <h3>Resumen de la Proforma</h3>
         <div class="form-section">
-            <div class="input-pair">
                 <div>
                     <label for="subtotal">Subtotal</label>
                     <input type="text" id="subtotal" name="subtotal" value="0" readonly>
@@ -23,13 +22,13 @@
                     <label for="total-impuestos">Impuestos</label>
                     <input type="text" id="total-impuestos" name="total-impuestos" value="0" readonly>
                 </div>
-            </div>
-            <div class="input-pair">
                 <div>
                     <label for="total-pagar">Total a Pagar</label>
                     <input type="text" id="total-pagar" name="total-pagar" value="0" readonly>
                 </div>
-            </div>
+                <div class="form-section">
+                    <button type="button" class="add-promo-btn"><strong>Generar</strong></button>
+                </div>
         </div>
     </aside>
 
@@ -48,7 +47,7 @@
                         </div>
                         <div>
                             <label for="identificacion">Identificación</label>
-                            <input type="text" id="identificacion" name="identificacion" placeholder="RUC/DNI" required>
+                            <input type="text" id="identificacion" name="identificacion" placeholder="RUC/CI" required>
                         </div>
                     </div>
                     <div class="input-pair">
@@ -73,14 +72,18 @@
                             <label for="producto">Producto</label>
                             <select id="producto" name="producto" required>
                                 <option value="">Seleccione el producto</option>
-                                <option value="puerta">Puertas</option>
-                                <option value="mueble">Muebles</option>
-                                <option value="closet">Closets</option>
+                                <option value="puerta">Puerta</option>
+                                <option value="mueble">Mueble De Cocina</option>
+                                <option value="closet">Closet</option>
                             </select>
                         </div>
                         <div>
                             <label for="cantidad">Cantidad</label>
                             <input type="number" id="cantidad" name="cantidad" min="1" placeholder="Cantidad" required>
+                        </div>
+                        <div>
+                            <label for="valor">Valor Unitario</label>
+                            <input type="text" id="valor" name="valor" placeholder="Valor unitario" required>
                         </div>
                     </div>
                     <div class="input-pair">
@@ -88,14 +91,10 @@
                             <label for="detalles">Detalles</label>
                             <input type="text" id="detalles" name="detalles" placeholder="Detalles del producto" required>
                         </div>
-                        <div>
-                            <label for="valor">Valor Unitario</label>
-                            <input type="text" id="valor" name="valor" placeholder="Valor unitario" required>
-                        </div>
                     </div>
                     <!-- Botón para agregar más productos -->
                     <div class="form-section">
-                        <button type="button" class="add-product-btn">Agregar otro producto</button>
+                        <button type="button" class="add-product-btn">+</button>
                     </div>
                 </div>
             </div>
@@ -107,16 +106,16 @@
                     <div class="input-pair">
                         <div>
                             <label for="descuento">Descuento</label>
-                            <input type="text" id="descuento" name="descuento" placeholder="Descuento aplicado" value="0">
+                            <input type="text" id="descuento" name="descuento" placeholder="Descuento aplicado en %">
                         </div>
-                        <div>
-                            <label for="impuestos">Promociones</label>
-                            <input type="text" id="impuestos" name="impuestos" placeholder="Impuestos calculados" value="0" readonly>
-                        </div>
+                    <div>
+                        <label for="tipo-promocion">Tipo de Promoción</label>
+                        <select id="tipo-promocion" name="tipo-promocion">
+                            <option value="">Seleccione una promoción</option>
+                            <option value="instalacion-gratis">Instalacion Gratis</option>
+                            <option value="envio-gratis">Envío Gratis</option>
+                        </select>
                     </div>
-                    <!-- Botón para agregar más promociones -->
-                    <div class="form-section">
-                        <button type="button" class="add-promo-btn">Agregar promoción</button>
                     </div>
                 </div>
             </div>

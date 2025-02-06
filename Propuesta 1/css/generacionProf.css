@@ -90,6 +90,17 @@ select {
 }
 
 /* Estilos para los botones */
+
+.add-promo-btn {
+    margin-top: 20px;
+    background-color: #EFE9D5;
+    color: #497D74;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     padding: 10px 20px;
     border: none;
@@ -108,6 +119,8 @@ button:hover {
 .add-product-btn, .add-promo-btn {
     align-self: flex-start;
 }
+
+
 
 /* Estilo para el aside del total, ahora a la derecha */
 aside.total-info {
@@ -130,6 +143,9 @@ aside input {
     background-color: #EFE9D5;
 }
 
+select {
+    background-color: #EFE9D5;
+}
 
 /* Ajustes para la versión responsive */
 @media (max-width: 768px) {
