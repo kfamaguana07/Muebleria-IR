@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/modificarProd.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modificar Producto</h1>
+        <form>
+            <label for="buscarProducto">Buscar Producto:</label>
+            <input type="text" id="buscarProducto" placeholder="Nombre o ID del producto">
+            
+            <button type="button"><i class="fas fa-search"></i> Buscar</button>
+
+            <label for="nombre">Nuevo Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nuevo nombre del producto">
+            
+            <label for="precio">Nuevo Precio:</label>
+            <input type="number" id="precio" placeholder="Nuevo precio del producto">
+
+            <label for="categoria">Nueva Categoría:</label>
+            <input type="text" id="categoria" placeholder="Nueva categoría del producto">
+            
+            <button type="submit"><i class="fas fa-save"></i> Guardar Cambios</button>
+            <button type="reset"><i class="fas fa-times-circle"></i> Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
