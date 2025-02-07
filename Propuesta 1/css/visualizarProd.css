@@ -103,9 +103,8 @@ label {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background: #f4f4f4;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    background: #497D74;
+    margin-bottom: 10px;
 }
 
 /* Estilo de cada filtro */
@@ -126,11 +125,13 @@ label {
 
 /* Estilo del botón de filtro */
 .filtro button {
-    background: #FF204E;
-    color: white;
+    background: #EFE9D5;
+    color: black;
     cursor: pointer;
     border: none;
     margin-left: auto;
+    padding: 1%;
+    border-radius: 10%;
 }
 
 .filtro button:hover {
