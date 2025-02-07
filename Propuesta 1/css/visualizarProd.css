@@ -10,7 +10,7 @@ header {
     background-color: #497D74; /* color actualizado */
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 14px;
     font-size: 15px;
 }
 
@@ -74,7 +74,7 @@ header {
 }
 
 .price {
-    color: #497D74; /* color actualizado */
+    color: red; /* color actualizado */
     font-size: 20px; /* tamaño de fuente reducido */
 }
 
@@ -87,6 +87,11 @@ label {
     margin: 5px;
 }
 
+.tituloProducto {
+    font-size: 18px; /* tamaño de fuente reducido */
+    font-weight: bold;
+    color: #497D74;
+}
 /* Colores específicos */
 .brown { background-color: #8B4513; }
 .black { background-color: black; }
