@@ -22,8 +22,8 @@
             <form id="form-consulta">
                 <div class="input-pair">
                     <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto">
+                        <label for="nombre">Nombre del Producto</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Puerta 7 Paneles">
                     </div>
                     <div>
                         <label for="categoria">Categoría</label>
@@ -37,12 +37,37 @@
                 </div>
                 <div class="input-pair">
                     <div>
-                        <label for="precio-min">Precio Mínimo</label>
-                        <input type="number" id="precio-min" name="precio-min" placeholder="Precio mínimo">
+                        <label for="material">Material</label>
+                        <select id="material" name="material">
+                            <option value="">Seleccionar Material</option>
+                            <option value="madera">Madera</option>
+                            <option value="mdf">MDF</option>
+                            <option value="melaminico">Melaminico</option>
+                        </select>
                     </div>
                     <div>
-                        <label for="precio-max">Precio Máximo</label>
-                        <input type="number" id="precio-max" name="precio-max" placeholder="Precio máximo">
+                        <label for="color">Color</label>
+                        <select id="color" name="color">
+                            <option value="">Seleccionar Color</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="madera">Madera</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-pair">
+                    <div>
+                        <label for="rango-precio">Rango de Precio</label>
+                        <select id="rango-precio" name="rango-precio">
+                            <option value="">Seleccionar Rango</option>
+                            <option value="menos-50">Menos de $50</option>
+                            <option value="50-100">$50 - $100</option>
+                            <option value="150-200">$150 - $200</option>
+                            <option value="200-250">$200 - $300</option>
+                            <option value="250-300">$300 - $350</option>
+                            <option value="mas-500">Más de $350</option>
+                        </select>
                     </div>
                 </div>
                 <button type="submit" class="buscar-btn"><i class="fas fa-search"></i> Buscar</button>
