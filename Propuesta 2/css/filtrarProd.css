@@ -1,0 +1,200 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #EFE9D5; /* Fondo más suave */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texto más oscuro para contraste */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #497D74; /* color actualizado */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del filtro */
+.filtrar-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #FFFFFF; /* Fondo blanco para el formulario */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de filtros */
+.filtros h2 {
+    color: #497D74;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Estilo del formulario de filtros */
+#form-filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo de cada grupo de filtro */
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Estilo de las etiquetas de los filtros */
+label {
+    color: #497D74;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Estilo de los select */
+select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #497D74;
+    outline: none;
+}
+
+/* Estilo del botón de filtro */
+.btn-filtrar {
+    background: #497D74;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.btn-filtrar:hover {
+    background: #D0173E; /* Color de hover más vibrante */
+    transform: translateY(-2px);
+}
+
+.btn-filtrar:active {
+    transform: translateY(2px); /* Efecto de presionar el botón */
+}
+
+/* Contenedor del catálogo */
+.catalogo-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Diseño de las cards */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo de cada card */
+.card {
+    background: #EFE9D5;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+
+/* Contenido de la card */
+.card-title {
+    font-size: 16px;
+    color: #497D74;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Título del producto */
+.tituloProducto {
+    font-size: 20px;
+    font-weight: bold;
+    color: #497D74;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+/* Contenedor de precio */
+.card-cont-precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Precio */
+.price {
+    color: #D0173E;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Etiquetas de colores */
+label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.brown { background-color: #8B4513; }
+.black { background-color: #000; }
+.white { background-color: #FFF; border: 1px solid #ddd; }
+.gray { background-color: #A9A9A9; }
+
+/* Efectos de transición */
+.card-img, .card-title, .price {
+    transition: all 0.3s ease;
+}
+
+.input {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+

@@ -53,7 +53,6 @@ header {
 }
 
 /* Contenido de la card */
-
 .card-title {
     font-size: 16px; /* tamaño de fuente reducido */
     color: #497D74; /* color actualizado */
@@ -92,6 +91,7 @@ label {
     font-weight: bold;
     color: #497D74;
 }
+
 /* Colores específicos */
 .brown { background-color: #8B4513; }
 .black { background-color: black; }
@@ -103,8 +103,10 @@ label {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background: #497D74;
+    background: #497D74; /* fondo de filtro */
     margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo de cada filtro */
@@ -125,7 +127,7 @@ label {
 
 /* Estilo del botón de filtro */
 .filtro button {
-    background: #EFE9D5;
+    background: #EFE9D5; /* color de fondo */
     color: black;
     cursor: pointer;
     border: none;
@@ -135,5 +137,5 @@ label {
 }
 
 .filtro button:hover {
-    background: #d0173e;
+    background: #d0173e; /* color de hover */
 }
