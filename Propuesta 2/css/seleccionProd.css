@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFE9D5; /* color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #497D74; /* color de fondo */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Contenedor principal del catálogo */
+.catalogo-container {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #497D74;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Filtros */
+.filtros-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #497D74;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.filtro label {
+    color: white;
+}
+
+.filtro select,
+.filtro input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Estilo de las cards */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de cada card */
+.card {
+    background: #EFE9D5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contenedor de la proforma */
+.proforma-container {
+    background-color: #497D74;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.proforma-container h2 {
+    text-align: center;
+}
+
+.proforma-list {
+    margin: 20px 0;
+}
+
+.proforma-list p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.finalizar-btn {
+    background-color: #FF204E;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.finalizar-btn:hover {
+    background-color: #497D74;
+}
+
+/* Estilo de los botones en las cards */
+.agregar-btn {
+    background-color: #497D74;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agregar-btn:hover {
+    background-color: #FF204E;
+}

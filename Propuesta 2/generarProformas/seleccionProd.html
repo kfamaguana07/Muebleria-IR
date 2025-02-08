@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="/Propuesta 2/css/seleccionProd.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+
+    <!-- Contenedor del catálogo -->
+    <div class="catalogo-container">
+        <!-- Filtro de productos -->
+        <div class="filtros-container">
+            <div class="filtro">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria">
+                    <option value="todas">Todas</option>
+                    <option value="muebles">Muebles</option>
+                    <option value="ropa">Ropa</option>
+                </select>
+            </div>
+            <div class="filtro">
+                <label for="precio">Rango de Precio:</label>
+                <input type="range" id="precio" min="0" max="1000" value="500">
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="catalogo-grid">
+            <div class="card">
+                <div class="card-img">
+                    <img src="/Propuesta 2/img/cocinafrente.webp" alt="Producto 1">
+                </div>
+                <div class="card-title">Producto 1</div>
+                <div class="card-cont-precio">
+                    <span class="price">$250.00</span>
+                    <button class="agregar-btn">Añadir a la Proforma</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/Propuesta 2/img/puertaroja.jpg" alt="Producto 2">
+                </div>
+                <div class="card-title">Producto 2</div>
+                <div class="card-cont-precio">
+                    <span class="price">$450.00</span>
+                    <button class="agregar-btn">Añadir a la Proforma</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="/Propuesta 2/img/cocinadentro.webp" alt="Producto 3">
+                </div>
+                <div class="card-title">Producto 3</div>
+                <div class="card-cont-precio">
+                    <span class="price">$350.00</span>
+                    <button class="agregar-btn">Añadir a la Proforma</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de la Proforma -->
+    <div class="proforma-container">
+        <h2>Proforma</h2>
+        <div class="proforma-list">
+            <p>No hay productos seleccionados</p>
+        </div>
+        <button class="finalizar-btn">Finalizar Compra</button>
+    </div>
+
+</body>
+</html>

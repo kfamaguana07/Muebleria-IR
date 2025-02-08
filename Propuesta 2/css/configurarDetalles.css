@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #EFE9D5; /* color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #497D74; /* color de fondo */
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor principal de la proforma */
+.proforma-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #497D74; /* Color de fondo */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #EFE9D5; /* Color del texto */
+}
+
+/* Título de la proforma */
+.proforma-container h2 {
+    text-align: center;
+    color: #EFE9D5; /* Color claro */
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo de la lista de productos */
+.proforma-list {
+    margin: 20px 0;
+}
+
+/* Estilo de cada item en la proforma */
+.proforma-item {
+    background: #EFE9D5; /* Fondo claro */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proforma-item:hover {
+    transform: translateY(-5px);
+}
+
+.proforma-item-info {
+    flex: 1;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #497D74; /* Color oscuro */
+}
+
+.item-price {
+    font-size: 18px;
+    color: #FF204E; /* Resaltando el precio en color cálido */
+    font-weight: bold;
+}
+
+/* Estilo de los detalles del producto */
+.proforma-item-details {
+    flex: 2;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.proforma-item-details p {
+    margin: 12px 0;
+}
+
+.proforma-item-details input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    box-sizing: border-box;
+    color: #497D74;
+}
+
+.proforma-item-details input::placeholder {
+    color: #B0B0B0;
+}
+
+/* Botones de acción */
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.guardar-btn,
+.finalizar-btn {
+    background-color: #EFE9D5; /* Color cálido */
+    color: black;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    width: 48%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guardar-btn:hover,
+.finalizar-btn:hover {
+    background-color: #FF204E;
+}
+
+.guardar-btn:focus,
+.finalizar-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 0;
+    color: black;
+}
