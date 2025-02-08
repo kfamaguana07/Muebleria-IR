@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFE9D5; /* color de fondo actualizado */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #497D74; /* color actualizado */
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+}
+
+/* Contenedor del catálogo */
+.catalogo-container {
+    max-width: 1300px;
+    margin: 15px auto;
+    padding: 20px;
+    background: #497D74;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Diseño de las cards */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de cada card */
+.card {
+    background: #EFE9D5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: white;
+}
+
+/* Contenido de la card */
+
+.card-title {
+    font-size: 16px; /* tamaño de fuente reducido */
+    color: #497D74; /* color actualizado */
+    margin: 10px 0;
+}
+
+.tituloProducto {
+    font-size: 18px; /* tamaño de fuente reducido */
+    font-weight: bold;
+}
+
+.card-cont-precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px; /* tamaño de fuente reducido */
+    font-weight: bold;
+}
+
+.price {
+    color: red; /* color actualizado */
+    font-size: 20px; /* tamaño de fuente reducido */
+}
+
+/* Etiquetas de colores */
+label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.tituloProducto {
+    font-size: 18px; /* tamaño de fuente reducido */
+    font-weight: bold;
+    color: #497D74;
+}
+/* Colores específicos */
+.brown { background-color: #8B4513; }
+.black { background-color: black; }
+.white { background-color: white; border: 1px solid #ccc; }
+.gray { background-color: gray; }
+
+/* Contenedor de filtros */
+.filtros-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #497D74;
+    margin-bottom: 10px;
+}
+
+/* Estilo de cada filtro */
+.filtro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo de los elementos dentro de los filtros */
+.filtro input, 
+.filtro select {
+    padding: 5px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 50px; /* Añadir margen a la izquierda */
+}
+
+/* Estilo del botón de filtro */
+.filtro button {
+    background: #EFE9D5;
+    color: black;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+    padding: 1%;
+    border-radius: 10%;
+}
+
+.filtro button:hover {
+    background: #d0173e;
+}

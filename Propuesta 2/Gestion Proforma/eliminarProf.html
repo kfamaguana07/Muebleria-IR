@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Proforma</title>
+    <link rel="stylesheet" href="/Propuesta 1/css/eliminarProf.css">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Muebleria y Carpinteria "El Laurel" </h1>
+    </header>
+
+    <aside class="total-info">
+        <h3>Resumen de la Proforma <i class="fas fa-file-invoice"></i></h3>
+        <div class="form-section">
+                <div>
+                    <label for="subtotal">Subtotal</label>
+                    <input type="text" id="subtotal" name="subtotal" value="0" readonly>
+                </div>
+                <div>
+                    <label for="total-impuestos">Impuestos</label>
+                    <input type="text" id="total-impuestos" name="total-impuestos" value="0" readonly>
+                </div>
+                <div>
+                    <label for="total-pagar">Total a Pagar</label>
+                    <input type="text" id="total-pagar" name="total-pagar" value="0" readonly>
+                </div>
+                <div class="form-section">
+                    <button type="button" class="delete-proforma-btn"><strong><i class="fas fa-trash-alt"></i> Eliminar</strong></button>
+                </div>
+        </div>
+    </aside>
+
+    <div class="container">
+        <form class="form-eliminar-proforma">
+            <h1 class="EliminarPro"><i class="fas fa-minus-circle"></i> Eliminar Proforma</h1>
+            
+            <!-- Contenedor: Información de la Proforma -->
+            <div class="info-proforma">
+                <h2>Información de la Proforma <i class="fas fa-info-circle"></i></h2>
+                <div class="form-section">
+                    <div class="input-pair">
+                        <div>
+                            <label for="numero-proforma">Número de Proforma</label>
+                            <input type="text" id="numero-proforma" name="numero-proforma" placeholder="Número de proforma" required>
+                        </div>
+                        <div>
+                            <label for="fecha-proforma">Fecha de Proforma</label>
+                            <input type="text" id="fecha-proforma" name="fecha-proforma" placeholder="Fecha de la proforma" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor: Cliente -->
+            <div class="info-cliente">
+                <h2>Cliente <i class="fas fa-user"></i></h2>
+                <div class="form-section">
+                    <div class="input-pair">
+                        <div>
+                            <label for="cliente">Cliente</label>
+                            <input type="text" id="cliente" name="cliente" placeholder="Nombre del cliente" readonly>
+                        </div>
+                        <div>
+                            <label for="identificacion">Identificación</label>
+                            <input type="text" id="identificacion" name="identificacion" placeholder="RUC/CI" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor: Producto -->
+            <div class="detalles-producto">
+                <h2>Detalles del Producto <i class="fas fa-box"></i></h2>
+                <div class="form-section">
+                    <div class="input-pair">
+                        <div>
+                            <label for="producto">Producto</label>
+                            <input type="text" id="producto" name="producto" placeholder="Producto" readonly>
+                        </div>
+                        <div>
+                            <label for="cantidad">Cantidad</label>
+                            <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad" readonly>
+                        </div>
+                        <div>
+                            <label for="valor">Valor Unitario</label>
+                            <input type="text" id="valor" name="valor" placeholder="Valor unitario" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

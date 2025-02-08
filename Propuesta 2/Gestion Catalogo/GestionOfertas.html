@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Ofertas</title>
+    <link rel="stylesheet" href="/Propuesta 1/css/GestionOfertas.css">
+</head>
+<body>
+    <header>
+        Gestión de Ofertas
+    </header>
+    <div class="container">
+        
+        <div class="container1">
+        <h2>Registrar Oferta</h2>
+
+            <div class="form-wrapper">
+                <form>
+                    <div class="input-group">
+                        <label for="nombre">Nombre de la Oferta</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="descripcion">Descripción</label>
+                        <input type="text" id="descripcion" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="precio">Precio</label>
+                        <input type="number" id="precio" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="fecha">Fecha de Expiración</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="confirm-btn">Guardar</button>
+                        <button type="reset" class="cancel-btn">Cancelar</button>
+                    </div>
+                </form>
+                <div class="image-upload">
+                    <label>Imagen de la Oferta</label>
+                    <div class="image-preview">Vista previa</div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container2">
+            <h2>Ofertas Registradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Expiración</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ejemplo Oferta</td>
+                        <td>Descuento en productos seleccionados</td>
+                        <td>$50</td>
+                        <td>2025-12-31</td>
+                        <td>
+                            <button class="edit-btn">✏️ Modificar</button>
+                            <button class="delete-btn">🗑 Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Aquí se agregarán más ofertas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    
+</body>
+</html>

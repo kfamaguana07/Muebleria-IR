@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Producto</title>
+    <link rel="stylesheet" href="/Propuesta 1/css/añadirProd.css">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mueblería y Carpintería "El Laurel"</h1>
+    </header>
+
+    <div class="container">
+        <h2><i class="fas fa-plus-circle"></i> Añadir Producto</h2>
+
+        <div class="form-wrapper">
+            <!-- Formulario -->
+            <form>
+                <div class="input-group">
+                    <label for="nombre"><i class="fas fa-tag"></i> Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre del producto">
+                </div>
+
+                <div class="input-group">
+                    <label for="precio"><i class="fas fa-dollar-sign"></i> Precio:</label>
+                    <input type="number" id="precio" placeholder="Precio del producto">
+                </div>
+
+                <div class="input-group">
+                    <label for="categoria"><i class="fas fa-th"></i> Categoría:</label>
+                    <select id="categoria">
+                        <option value="muebles">Puerta</option>
+                        <option value="decoracion">Mueble De Cocina</option>
+                        <option value="iluminacion">Closet</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="material"><i class="fas fa-cube"></i> Material Disponible:</label>
+                    <select id="material">
+                        <option value="madera">Madera</option>
+                        <option value="mdf">MDF</option>
+                        <option value="melaminico">Melaminico</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="colores"><i class="fas fa-palette"></i> Colores Disponibles:</label>
+                    <select id="colores">
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                </div>
+
+                <!-- Botones en una línea separada -->
+                <div class="button-group">
+                    <button type="submit" class="confirm-btn"><i class="fas fa-check"></i> Confirmar</button>
+                    <button type="reset" class="cancel-btn"><i class="fas fa-times"></i> Cancelar</button>
+                </div>
+            </form>
+
+            <!-- Subida de imagen -->
+            <div class="image-upload">
+                <label for="imagen"><i class="fas fa-image"></i> Seleccionar Imagen:</label>
+                <input type="file" id="imagen">
+                <div class="image-preview" id="imagePreview">
+                    <span><i class="fas fa-eye"></i> Vista previa de la imagen</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

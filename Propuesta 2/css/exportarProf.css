@@ -1,0 +1,166 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fuente principal */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #497D74;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Contenedor de la Factura */
+  .factura {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Información de la Factura */
+  .factura-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .cliente-info {
+    width: 60%;
+  }
+  
+  .factura-detalle {
+    text-align: right;
+    width: 35%;
+  }
+  
+  .factura-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .factura-info p strong {
+    font-weight: 600;
+  }
+  
+  /* Tabla de Productos */
+  .productos h3 {
+    font-size: 1.3rem;
+    color: #497D74;
+    margin-bottom: 10px;
+  }
+  
+  .productos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .productos th, .productos td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .productos th {
+    background-color: #497D74;
+    color: white;
+  }
+  
+  .productos td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Descuentos y Totales */
+  .promociones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .promociones .total {
+    font-weight: bold;
+  }
+  
+  .promociones p {
+    margin: 5px 0;
+  }
+  
+  .promociones .total {
+    font-size: 1.2rem;
+  }
+  
+  /* Botones de Acción */
+  .acciones {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn {
+    background-color: #497D74;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3c655a;
+  }
+  
+  .btn:active {
+    background-color: #2e4a45;
+  }
+  
+  .btn i {
+    margin-right: 8px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .factura-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .factura-detalle {
+      text-align: left;
+      margin-top: 20px;
+    }
+  
+    .productos table th, .productos table td {
+      padding: 8px;
+    }
+  
+    .acciones {
+      margin-top: 20px;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 10px 18px;
+    }
+  }
+  
