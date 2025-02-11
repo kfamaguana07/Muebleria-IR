@@ -15,13 +15,13 @@ body {
 /* Estilos del header */
 header {
     background-color: #497D74;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     color: white;
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
 }
 
 /* Contenedor principal */
